@@ -1,4 +1,5 @@
 import re
+
 celsius = input('Please, enter °C:\n').replace(',','.')
 
 if re.search(r'[a-zA-Zа-яА-я]',celsius):
