@@ -1,5 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
+from decimal import Decimal as D
 
 def usd_to_byn():
     usd = input('Enter the USD amount, please: \n')
@@ -8,7 +9,7 @@ def usd_to_byn():
     soup = BeautifulSoup(r.content, 'html.parser')
     usd_ratio = soup.find('span', {'class': 'accent'}).text
 
-    byn = float(usd_ratio) * float(usd)
+    byn = D(usd_ratio) * D(usd)
 
     print(f'{usd}'" USD is " f'{byn}' ' BYN.')
     input('Press Enter to exit...')
