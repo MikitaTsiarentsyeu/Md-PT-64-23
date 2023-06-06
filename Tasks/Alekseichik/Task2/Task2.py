@@ -3,7 +3,7 @@ import re
 time = input('Enter time (hh:mm):\n')
 
 if not re.match(r'^[0-2][0-9]:[0-5][0-9]$', time):
-    print('Error. Input format must be like hh:mm and only digital.')
+    input('Error. Input format must be like hh:mm and only digital.\n Press Enter to exit.')
     exit()
 else:
     hh, mm = time.split(':')
