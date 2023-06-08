@@ -42,6 +42,7 @@ dict_minutes = {
 
 minutes_tokens = ["минут", "минута", "минуты"]
 
+isValid = False
 
 try:
     time = input("Enter data in the format hh:mm:\n")
@@ -50,13 +51,14 @@ try:
     mm_1 = time[3:4]+"0" #the first symbol in seconds
     mm_2 = time[4:5] #the second symbol in seconds
     if not (0 <= hh <= 24 and 0 <= mm <=59 and time[2:3] == ":" and len(time) == 5) or (hh == 24 and mm > 0):
-        print("You enter a wrong data")
-        exit()
+        isValid = True
 
 except ValueError:
+    isValid = True
+
+if isValid:
     print("You enter a wrong data")
     exit()
-
 
 if hh >= 12:
     hh -= 12
