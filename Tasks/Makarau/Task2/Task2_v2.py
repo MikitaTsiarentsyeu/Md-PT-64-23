@@ -91,9 +91,11 @@ elif 30<mm<45:
         if time_dir[mm-(mm//10*10)][2]==(""):
             time_dir[mm-(mm//10*10)][2]=time_dir[mm-(mm//10*10)][0]
         print(f"{time} - {time_dir[mm//10*10][2]} {time_dir[mm-(mm//10*10)][2]} {minuts_tokens[1]} {time_dir[hh+1][1]} {hours_tokens[0]}")
+    elif 4<mm-(mm//10*10)<=9:
+        if time_dir[mm-(mm//10*10)][2]==(""):
+            time_dir[mm-(mm//10*10)][2]=time_dir[mm-(mm//10*10)][0]
+        print(f"{time} - {time_dir[mm//10*10][2]} {time_dir[mm-(mm//10*10)][2]} {minuts_tokens[2]} {time_dir[hh+1][1]} {hours_tokens[0]}")
     elif mm==40:
         print(f"{time} - {time_dir[mm][2]} {minuts_tokens[2]} {time_dir[hh+1][1]} {hours_tokens[0]}") 
-    else:
-        print(f"{time} - {time_dir[mm//10*10][2]} {time_dir[mm-(mm//10*10)][2]} {minuts_tokens[2]} {time_dir[hh+1][1]} {hours_tokens[0]}")
 elif mm>= 45:
     print(f"{time} - {hours_tokens[2]} {time_dir[60-mm][3]} {minuts_tokens[2]} {time_dir[hh+1][1]} {hours_tokens[0]} ")
