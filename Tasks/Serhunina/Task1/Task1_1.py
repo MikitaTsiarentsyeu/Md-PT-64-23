@@ -1,6 +1,12 @@
+def parsefloat(value):
+    try:
+        return float(value)
+    except ValueError:
+        print('Invalid value') 
+        exit(1)
 
 Celsius = input('Enter your value for Celsius:\n')
-Celsius = float(Celsius)
+Celsius = parsefloat(Celsius)
 
 constant_1 = 1.8
 constant_1 = float(constant_1)
