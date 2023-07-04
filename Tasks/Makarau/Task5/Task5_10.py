@@ -1,5 +1,4 @@
 def fibonaccio(n,a=0,b=1):
-    print(a)
     if n==1:
         return print(a)
     if n>0:
