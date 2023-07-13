@@ -11,9 +11,9 @@ def create_file(func):
         func(*args)
         finish = time.time()
         result = func(*args)
-        time = finish - start
-        with open('summ.txt', 'w+') as f:
-            f.write(f'Result - {result}, time - {time}, arguments - {args}')
+        time_p = finish - start
+        with open('summ.txt', 'a') as f:
+            f.write(f'Result - {result}, time - {time_p}, arguments - {args}\n')
     return wrapper
 
 @create_file
@@ -21,3 +21,4 @@ def summ(a, b, c):
     return a*b*c
 
 summ(11, 17, 24)
+summ(12, 22, 31)
