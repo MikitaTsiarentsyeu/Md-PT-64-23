@@ -1,0 +1,49 @@
+1. Write a function that takes two integers as arguments and returns their sum.
+
+2. Write a function that takes a list of strings as an argument and returns a new list of strings that are all reversed.
+
+3. Write a function that takes a list of strings as an argument and returns a new list with all the strings that have a length greater than 5.
+
+4. Write a function that takes a string as an argument and returns two numbers, first for count of lower case symbols, second for count of the upper case symbols in the initial string.
+
+5. Write a function that takes an ordered list of numbers without duplicates and returns a string with ranges for those numbers, check the example below:
+get_ranges([0, 1, 2, 3, 4, 7, 8, 10])  ->  "0-4, 7-8, 10"
+get_ranges([4,7,10])  -> "4, 7, 10"
+get_ranges([2, 3, 8, 9])  -> "2-3, 8-9"
+
+6. Write a recursive function to reverse a string.
+
+7. Write a recursive function to check whether a given string is a palindrome.
+
+8. Write a recursive function to count the number of occurrences of a given character in a string.
+
+9. Write a recursive function to calculate the power of a given number.
+
+10. Write a recursive function to find the Nth number in the Fibonacci sequence.
+0, 1, 2, 3, 5, 8, 13, 21, ...
+
+
+
+1. Напишите функцию, которая принимает в качестве аргументов два целых числа и возвращает их сумму.
+
+2. Напишите функцию, которая принимает список строк в качестве аргумента и возвращает новый список строк, которые все перевернуты.
+
+3. Напишите функцию, которая принимает список строк в качестве аргумента и возвращает новый список со всеми строками, длина которых превышает 5.
+
+4. Напишите функцию, которая принимает строку в качестве аргумента и возвращает два числа, первое для подсчета символов нижнего регистра, второе для подсчета символов верхнего регистра в исходной строке.
+
+5. Напишите функцию, которая принимает упорядоченный список чисел без дубликатов и возвращает строку с диапазонами для этих чисел. Посмотрите пример ниже:
+get_ranges([0, 1, 2, 3, 4, 7, 8, 10]) -> "0-4, 7-8, 10"
+get_ranges([4,7,10]) -> "4, 7, 10"
+get_ranges([2, 3, 8, 9]) -> "2-3, 8-9"
+
+6. Напишите рекурсивную функцию для обращения строки.
+
+7. Напишите рекурсивную функцию для проверки того, является ли заданная строка палиндромом.
+
+8. Напишите рекурсивную функцию для подсчета количества вхождений данного символа в строку.
+
+9. Напишите рекурсивную функцию для вычисления степени заданного числа.
+
+10. Напишите рекурсивную функцию для поиска N-го числа в последовательности Фибоначчи.
+0, 1, 2, 3, 5, 8, 13, 21, ...
