@@ -1,0 +1,45 @@
+func: fibo, time: 0.00005, result: 8, argumet(s): 6
+func: sum,time: 0.00000, result: 15, argumet(s): (10, 5)
+func: fibo, time: 0.00009, result: 8, argumet(s): 6
+func: sum, time: 0.00001, result: 15, argumet(s): (10, 5)
+func: fibo, time: 0.00009, result: 8, argumet(s): 6
+func: sum,argumet(s): (10, 5), time: 0.00000, result: 15
+func: fibo,argumet(s): 6, time: 0.00004, result: 8
+func: sum, argumet(s): (10, 5), time: 0.00001, result: 15
+func: fibo, argumet(s): 6, time: 0.00005, result: 8
+func: sum, argumet(s): (10, 5), result: 15, time: 0.00000
+func: fibo, argumet(s): 6, result: 8, time: 0.00004
+func: sum, argumet(s): (10, 5), result: 15, time: 0.00001
+func: fibo, argumet(s): 6, result: 8, time: 0.00008
+func: sum, argumet(s): (10, 5), result: 15, time: 0.00000
+func: fibo, argumet(s): 6, result: 8, time: 0.00009
+func: sum, argumet(s): (10, 5), result: 15, time: 2.86102294921875e-06
+func: fibo, argumet(s): 6, result: 8, time: 0.00010919570922851562
+func: sum, argumet(s): (10, 5), result: 15, time: 4.76837158203125e-06
+func: fibo, argumet(s): 17, result: 1597, time: 0.007951974868774414
+func: sum, argumet(s): (10, 5), result: 15, time: 4.0531158447265625e-06
+func: fibo, argumet(s): 17, result: 1597, time: 0.007920980453491211
+func: square, argumet(s): 7, result: 49, time: 6.9141387939453125e-06
+func: sum, argumet(s): (10, 5), result: 15, time: 4.0531158447265625e-06
+func: fibo, argumet(s): 17, result: 1597, time: -0.021586894989013672
+func: square, argumet(s): 7, result: 49, time: -4.291534423828125e-06
+func: sum, argumet(s): (10, 5), result: 15, time: 1.9073486328125e-06
+func: fibo, argumet(s): 17, result: 1597, time: -0.6295552253723145
+func: square, argumet(s): 7, result: 49, time: -3.2901763916015625e-05
+func: square, argumet(s): 7, result: 49, time: -8.511543273925781e-05
+func: square, argumet(s): 345, result: 119025, time: 9.393692016601562e-05
+func: square, argumet(s): 7, result: 49, time: 6.508827209472656e-05
+func: fibo, argumet(s): 8, result: 21, time: 0.003526926040649414
+func: sum, argumet(s): (6, 5), result: 11, time: 5.9604644775390625e-06
+func: square, argumet(s): 7, result: 49, time: 6.198883056640625e-06
+func: fibo, argumet(s): 8, result: 21, time: 0.0002288818359375
+func: sum, argumet(s): (6, 5), result: 11, time: 3.0994415283203125e-06
+func: square, argumet(s): 7, result: 49, time: 3.814697265625e-06
+func: fibo, argumet(s): 8, result: 21, time: 9.608268737792969e-05
+func: sum, argumet(s): (6, 5), result: 11, time: 5.0067901611328125e-06
+func: square, argumet(s): 7, result: 49, time: 3.814697265625e-06
+func: fibo, argumet(s): 8, result: 21, time: 0.00010180473327636719
+func: sum, argumet(s): (6, 5), result: 11, time: 5.9604644775390625e-06
+func: square, argumet(s): 7, result: 49, time: 1.6689300537109375e-06
+func: fibo, argumet(s): 8, result: 21, time: 0.00011205673217773438
+func: sum, argumet(s): (6, 5), result: 11, time: 3.0994415283203125e-06
