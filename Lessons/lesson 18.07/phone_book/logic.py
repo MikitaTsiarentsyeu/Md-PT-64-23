@@ -1,21 +1,37 @@
-repo = {"name":["4356436536", "5465474757"]}
+import json
+repo_name = "repo.json"
+
+try:
+    with open(repo_name, 'r') as f:
+        repo = json.load(f)
+except:
+    raise RuntimeError("an error occured while accessing a storage")
 
 def add_record(name, *numbers):
     if name not in repo:
         repo[name] = list(numbers)
-        return "the record was added"
+        res = "the record was added"
     else:
         current_numbers = repo[name]
         current_numbers.extend(numbers)
         repo[name] = list(set(current_numbers))
-        return "the name exists, the numbers were added"
+        res = "the name exists, the numbers were added"
+    with open(repo_name, 'w') as f:
+        json.dump(repo, f)
+    return res
     
 def get_record(name):
-    if name in repo:
+    try:
         numbers = repo[name]
         return f"{name}:{','.join(numbers)}"
-    else:
+    except KeyError:
         return "nothing was found"
+    except:
+        raise RuntimeError("an error occured during getting a record")
+        
     
 def get_all_records():
-    return '\n'.join([f"{name}:{','.join(repo[name])}" for name in repo])
+    try:
+        return '\n'.join([f"{name}:{','.join(repo[name])}" for name in repo])
+    except:
+        raise RuntimeError("an error occured during getting records information")

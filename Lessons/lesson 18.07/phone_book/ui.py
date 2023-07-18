@@ -6,7 +6,11 @@ def add_record():
     """ask a user for a name and numbers, then go to logic"""
     name = ask_for_param("a name")
     numbers = ask_for_param("numbers separated by comma")
-    numbers = validation.check_numbers(numbers)
+    try:
+        numbers = validation.check_numbers(numbers)
+    except RuntimeError as e:
+        print(e)
+        return
     if numbers:
         res = logic.add_record(name, *numbers)
         print(res)
@@ -16,11 +20,18 @@ def add_record():
 def get_record():
     """ask a user for a name, then go to logic"""
     name = ask_for_param("a name")
-    res = logic.get_record(name)
+    try:
+        res = logic.get_record(name)
+    except RuntimeError as e:
+        print(e)
+        return
     print(res)
 
 def get_all_records():
-    print(logic.get_all_records())
+    try:
+        print(logic.get_all_records())
+    except RuntimeError as e:
+        print(e)
 
 def ask_for_param(param):
     value = input(f"Please enter {param}:\n")
