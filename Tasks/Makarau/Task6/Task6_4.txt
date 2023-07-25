@@ -1,0 +1,3 @@
+Execution time 0.0 seconds.
+Arguments (2, 100).
+Value of a function 1267650600228229401496703205376.

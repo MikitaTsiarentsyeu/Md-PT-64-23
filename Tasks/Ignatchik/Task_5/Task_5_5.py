@@ -1,16 +1,25 @@
 list_input = [0, 1, 2, 3, 4, 7, 8, 10]
 
-def nums(lst):
-    res = str(lst[0])
-    for n in range(len(lst) - 1):
-        if lst[n] + 1 == lst[n + 1]:
-            if res[-1] != '-':
-                res += '-'
+def get_ranges(numbers):
+    ranges = []
+    start = numbers[0]
+    end = numbers[0]
+    
+    for num in numbers[1:]:
+        if num == end + 1:
+            end = num
         else:
-            if f'{lst[n]}' not in res:
-                res += f'{lst[n]}, {lst[n + 1]}'
+            if start != end:
+                ranges.append(f"{start}-{end}")
             else:
-                res += f'{lst[n + 1]}'
-    return res
+                ranges.append(str(start))
+            start = end = num
+    
+    if start != end:
+        ranges.append(f"{start}-{end}")
+    else:
+        ranges.append(str(start))
+    
+    return ', '.join(ranges)
 
-print(nums(list_input))
+print(get_ranges(list_input))
