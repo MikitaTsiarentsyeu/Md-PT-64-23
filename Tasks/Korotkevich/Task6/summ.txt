@@ -1,1 +1,2 @@
-Result - 4488, time - 3.814697265625e-06, arguments - (11, 17, 24)
+Result - 4488, time - 3.337860107421875e-06, arguments - (11, 17, 24)
+Result - 8184, time - 2.384185791015625e-06, arguments - (12, 22, 31)
