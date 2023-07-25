@@ -21,7 +21,7 @@ try:
 except StopIteration:
     flag = False
 
-single_HTML_tags = ['!DOCTYPE', 'area', 'base', 'br', 'col', 'embed', 'hr', 'img', 'input', 'keygen', 'link', 'meta', 'param', 'source', 'track', 'wbr']
+single_HTML_tags = ('!DOCTYPE', 'area', 'base', 'br', 'col', 'embed', 'hr', 'img', 'input', 'keygen', 'link', 'meta', 'param', 'source', 'track', 'wbr')
 
 def remove_text(l):
     c_tags = []
@@ -40,7 +40,7 @@ def remove_single_tags(l1, l2):
         for j in l2:
             if j not in i:
                 count += 1
-        if count == 16:
+        if count == len(single_HTML_tags):
             res.append(i)
     return res
 
