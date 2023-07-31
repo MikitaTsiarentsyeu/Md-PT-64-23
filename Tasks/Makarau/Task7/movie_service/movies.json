@@ -1,0 +1,32 @@
+[
+  {
+    "title": "The Green Mile",
+    "director": "Frank Darabont",
+    "year": "1999",
+    "genre": "drama"
+  },
+  {
+    "title": "The Shawshank Redemption",
+    "director": "Frank Darabont",
+    "year": "1994",
+    "genre": "drama"
+  },
+  {
+    "title": "Forrest Gump",
+    "director": "Robert Zemeckis",
+    "year": "1994",
+    "genre": "drama"
+  },
+  {
+    "title": "Schindlers List",
+    "director": "Steven Spielberg",
+    "year": "1993",
+    "genre": "biography"
+  },
+  {
+    "title": "Intouchables",
+    "director": "Olivier Nakache",
+    "year": "2011",
+    "genre": "comedy"
+  }
+]
