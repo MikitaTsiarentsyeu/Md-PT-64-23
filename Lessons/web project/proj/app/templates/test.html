@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,5 +10,6 @@
 <body>
     <h1>My Django test page</h1>
     <p>The current time is {{c_time}}</p>
+    <img src="{% static 'app/img/dog.jpg' %}" />
 </body>
 </html>
