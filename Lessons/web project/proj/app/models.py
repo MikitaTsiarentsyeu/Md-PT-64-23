@@ -16,3 +16,23 @@ class Post(models.Model):
     post_type = models.CharField(max_length=1, choices=POST_TYPES)
 
     author = models.ForeignKey('Author', on_delete=models.CASCADE)
+
+
+# class User: pass
+
+# class Item(models.Model):
+
+#     name = models.CharField(max_length=100)
+#     description = models.TextField()
+#     price = models.DecimalField()
+#     # category = models.CharField()
+#     category = models.ForeignKey("Category", on_delete=models.DO_NOTHING)
+
+# class Category(models.Model):
+
+#     name = models.CharField(max_length=100)
+#     image = models.ImageField(upload_to="cat_images")
+
+# class Basket:
+
+#     items = {"item name": "item count"}
