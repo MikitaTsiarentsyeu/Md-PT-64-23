@@ -27,13 +27,6 @@ urlpatterns = [
     path('second/', show_second_post),
     path('posts/<int:post_id>', show_post, name="post"),
     path('posts/', show_all_posts, name='posts'),
-
-    path("catalog/", catalog, name="catalog"),
-    path("basket/", basket, name="basket"),
-    path("catalog/item/<str:item_name>", item, name="item")
-    /catalog/item/name1
-    /catalog/item/name2
-    /catalog/item/name3
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
