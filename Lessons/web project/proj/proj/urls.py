@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from app.views import show_first_post, show_second_post, show_post, show_all_posts
+from app.views import show_first_post, show_second_post, show_post, show_all_posts, add_post
 
 from django.conf import settings
 from django.conf.urls.static import static
@@ -27,6 +27,7 @@ urlpatterns = [
     path('second/', show_second_post),
     path('posts/<int:post_id>', show_post, name="post"),
     path('posts/', show_all_posts, name='posts'),
+    path('posts/add', add_post, name='add'),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

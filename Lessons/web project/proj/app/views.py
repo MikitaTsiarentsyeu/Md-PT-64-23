@@ -1,6 +1,7 @@
-from django.shortcuts import render, HttpResponse
+from django.shortcuts import render, HttpResponse, redirect
 import datetime
-from .models import Post
+from .models import Post, Author
+from .forms import AddPost, AddPostModel
 from django.http import HttpResponseNotFound
 
 def show_first_post(request):
@@ -26,3 +27,27 @@ def show_all_posts(request):
     # response = f"<h1>Posts:</h1><ul>{post_list}</ul>"
     # return HttpResponse(response)
     return render(request, 'posts.html', {'posts':posts})
+
+def add_post(request):
+    if request.method == 'POST':
+        form = AddPostModel(request.POST, request.FILES)
+        if form.is_valid():
+            # post_item = Post()
+            # post_item.author = Author.objects.all()[0]
+            # post_item.issued = datetime.datetime.now()
+            # post_item.title = form.cleaned_data['title']
+            # post_item.content = form.cleaned_data['content']
+            # post_item.post_type = form.cleaned_data['post_type']
+            # post_item.image = form.cleaned_data['image']
+            # post_item.save()
+
+            post_item = form.save(False)
+            post_item.author = Author.objects.all()[0]
+            post_item.issued = datetime.datetime.now()
+            post_item.save()
+            # form.save_m2m()
+            return redirect('post', post_item.id)
+    else:
+        form = AddPostModel()
+    
+    return render(request, 'add_post.html', {"form":form})
