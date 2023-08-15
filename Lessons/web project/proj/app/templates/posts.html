@@ -8,6 +8,9 @@
             <h1>{{post.title}}</h1>
         </a>
         <p>{{post.content}}</p>
+        {% if post.id in viewed_posts %}
+            |viwed|
+        {% endif %}
         {% if post.image %}
             <img width="50%" src="{{post.image.url}}"/>
         {% endif %}
