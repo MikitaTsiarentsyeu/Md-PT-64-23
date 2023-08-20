@@ -15,3 +15,6 @@ def my_ranges (numbers):
                 res +=", "+str(numbers[i])
     return res    
 print(my_ranges(numbers))
+
+
+
