@@ -1,0 +1,3 @@
+The execution time: 0.0,
+Arguments: (7755, 1805, 3475, 3277),
+The value of the function: 159400712645625.
